@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+const { use } = require("bcrypt/promises");
 const jwt = require("jsonwebtoken");
 const {
   onMissingValResponse,
@@ -7,7 +8,7 @@ const {
   successfulGetResponse,
   serverErrorResponse,
 } = require("../../helper/responses");
-const User = require("../../models/Users");
+const User = require("../../models/Admins");
 
 exports.login = async (req, res) => {
   try {

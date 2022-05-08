@@ -3,7 +3,7 @@ const {
   serverErrorResponse,
   onCreationResponse,
 } = require("../../helper/responses");
-const User = require("../../models/Users");
+const User = require("../../models/Admins");
 
 exports.register = async (req, res) => {
   //storing values passed from client side

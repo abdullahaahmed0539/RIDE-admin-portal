@@ -21,9 +21,8 @@ mongoose
   });
 
 //Starting up server
-const PORT = 8081;
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.clear();
-  console.log(`Running on port ${PORT}.`);
+  console.log(`Running on port ${process.env.PORT}.`);
   console.log("Connecting to database...");
 });
