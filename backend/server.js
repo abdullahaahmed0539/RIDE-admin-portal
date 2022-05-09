@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const app = require("./app");
 require("dotenv").config();
 
-let MONGODB = process.env.DATABASE_CONNECTION_STRING
+// let MONGODB = process.env.DATABASE_CONNECTION_STRING
+const MONGODB = "mongodb://127.0.0.1:27017/ride";
 
 mongoose
   .connect(MONGODB, {
